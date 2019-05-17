@@ -1,0 +1,6 @@
+<li ng-repeat='artist in $ctrl.artists.slice((($ctrl.currentPage-1)*$ctrl.itemsPerPage), (($ctrl.currentPage)*$ctrl.itemsPerPage))'>
+	<a ui-sref="artist({ artistId: artist.id })" href='#' ng-click='$ctrl.callGetArtistAlbums(artist.id)'>{{artist.name}}</a>
+</li>
+
+
+<div>haghsghgahsghasg</div>

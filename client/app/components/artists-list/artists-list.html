@@ -1,0 +1,29 @@
+<h1>List Artists</h1>
+
+<!-- Search -->
+<div class="form-group">
+	<input type="search" class="form-control" ng-model="query" ng-change="$ctrl.callGetArtists(query)" placeholder="Search Artist" />
+</div>
+
+<ul>
+    <artist current-page='$ctrl.currentPage' items-per-page='$ctrl.itemsPerPage' artists="$ctrl.artists"></artist> 
+</ul>
+
+<pre>The selected page no: {{$ctrl.currentPage}}</pre>
+<div>
+    <ul uib-pagination 
+    total-items="$ctrl.totalItems" ng-model="$ctrl.currentPage" max-size="$ctrl.maxSize" boundary-links="true" boundary-link-numbers="true" force-ellipses="true" items-per-page="$ctrl.itemsPerPage" first-text="First" last-text="Last" next-text="Next" previous-text="Prev">
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
